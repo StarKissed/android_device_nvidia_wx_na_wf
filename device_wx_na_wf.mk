@@ -18,7 +18,7 @@ endif
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_KERNEL):kernel \
-    $(LOCAL_PATH)/init.recovery.ardbeg.rc:recovery/root/init.recovery.ardbeg.rc \
+    $(LOCAL_PATH)/init.recovery.ardbeg.rc:root/init.recovery.ardbeg.rc \
     $(LOCAL_PATH)/twrp.fstab:recovery/root/etc/twrp.fstab \
     $(LOCAL_PATH)/ueventd.ardbeg.rc:recovery/root/ueventd.ardbeg.rc
 
