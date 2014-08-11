@@ -10,14 +10,8 @@ $(call inherit-product-if-exists, vendor/nvidia/wx_na_wf/wx_na_wf-vendor.mk)
 DEVICE_PACKAGE_OVERLAYS += device/nvidia/wx_na_wf/overlay
 
 LOCAL_PATH := device/nvidia/wx_na_wf
-ifeq ($(TARGET_PREBUILT_KERNEL),)
-	LOCAL_KERNEL := $(LOCAL_PATH)/kernel
-else
-	LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
-endif
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_KERNEL):kernel \
     $(LOCAL_PATH)/init.recovery.ardbeg.rc:root/init.recovery.ardbeg.rc \
     $(LOCAL_PATH)/twrp.fstab:recovery/root/etc/twrp.fstab \
     $(LOCAL_PATH)/ueventd.ardbeg.rc:recovery/root/ueventd.ardbeg.rc
