@@ -41,5 +41,5 @@ BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/nvidia/wx_na_wf/recovery_keys.c
 BOARD_CUSTOM_GRAPHICS := ../../../device/nvidia/wx_na_wf/graphics.c
 
 RECOVERY_VARIANT := philz
-TARGET_SCREEN_HEIGHT := 1920
-TARGET_SCREEN_WIDTH := 1200
+TARGET_SCREEN_HEIGHT := 2560
+TARGET_SCREEN_WIDTH := 1440
