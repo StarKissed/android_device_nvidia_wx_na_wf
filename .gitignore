@@ -1,3 +1,6 @@
 system/lib/modules
 *.zip
 recovery.img
+boot.img-ramdisk
+zImage
+newramdisk.cpio.gz

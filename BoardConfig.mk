@@ -25,14 +25,16 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 TARGET_KERNEL_SOURCE := kernel/nvidia/ardbeg
 TARGET_KERNEL_CONFIG := tegra12_philz_defconfig
 #TARGET_PREBUILT_KERNEL := device/nvidia/wx_na_wf/kernel
-BOARD_KERNEL_CMDLINE := no_console_suspend=1 console=null
+BOARD_KERNEL_CMDLINE := "androidboot.selinux=permissive"
 BOARD_KERNEL_BASE := 0x10000000
 BOARD_KERNEL_PAGESIZE := 2048
 
 # Recovery
+TARGET_RECOVERY_FSTAB := device/nvidia/wx_na_wf/recovery.fstab
 BOARD_HAS_NO_SELECT_BUTTON := true
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
-BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_23x41.h\"
+TARGET_RECOVERY_LCD_BACKLIGHT_PATH := \"/sys/class/backlight/pwm-backlight/brightness\"
+BOARD_USE_CUSTOM_RECOVERY_FONT := \"fonten55_33x84.h\"
 COMMON_GLOBAL_CFLAGS += -DNO_SECURE_DISCARD 
 #COMMON_GLOBAL_CFLAGS += -DBOARD_HAS_FLIPPED_SCREEN
 BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/nvidia/wx_na_wf/recovery_keys.c

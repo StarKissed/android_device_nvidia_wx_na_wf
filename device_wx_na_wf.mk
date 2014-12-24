@@ -32,6 +32,19 @@ LOCAL_PATH := device/nvidia/wx_na_wf
 
 $(call inherit-product, build/target/product/full.mk)
 
+PRODUCT_PACKAGES += \
+    fstab.tn8 \
+    init.cal.rc \
+    init.hdcp.rc \
+    init.t124.rc \
+    init.tegra.rc \
+    init.tegra_emmc.rc \
+    init.tlk.rc \
+    init.tn8.rc \
+    init.tn8.usb.rc \
+    power.tn8.rc \
+    ueventd.tn8.rc
+
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 PRODUCT_NAME := full_wx_na_wf
 PRODUCT_DEVICE := wx_na_wf
