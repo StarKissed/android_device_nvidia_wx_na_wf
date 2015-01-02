@@ -16,7 +16,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter shieldtablet wx_na_do wx_na_wf wx_un_do wx_un_mo,$(TARGET_DEVICE)),)
+ifneq ($(filter wx_na_wf,$(TARGET_DEVICE)),)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
