@@ -1,6 +1,6 @@
 system/lib/modules
 *.zip
 recovery.img
-recovery.img-ramdisk
+ramdisk-recovery
 processing/kernel
 ramdisk-recovery.cpio.gz
